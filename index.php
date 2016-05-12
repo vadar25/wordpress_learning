@@ -8,5 +8,5 @@ if (have_posts()) :
 	else :
 		echo '<p>No content found.</p>';
 	endif;
-
+get_footer();
 ?>
