@@ -50,3 +50,42 @@ article.post {
 article.post:last-of-type {
   border-bottom: none;
 }
+
+
+/*navigation menu*/
+
+.site-nav ul{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.site-nav ul:before, .site-nav ul:after {content: "";display: table;}
+.site-nav ul:after {clear: both;}
+.site-nav ul { *zoom:1;}
+
+.site-nav ul li {
+  list-style: none;
+  float: left;
+}
+
+
+
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited {
+  display: block;
+  padding: 10px 18px;
+  border: 1px solid #bbb;
+  border-bottom: none;
+  text-decoration:none;
+
+}
+.site-header nav ul li a:hover {
+  background-color: #bbb;
+}
+
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited {
+  background-color: #006ec3;
+  color: white;
+}
