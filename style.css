@@ -146,3 +146,18 @@ article.page h2 {
 	font-size: 225%;
 	margin-bottom: 15px;
 }
+/*clearfix*/
+
+.clearfix:before, .clearfix:after { content: "";display: table;}
+.clearfix:after {clear: both;}
+.clearfix {*zoom:1;}
+/*two column title layout*/
+
+div.title-column {
+  width: 30%;
+  float: left;
+}
+div.text-column {
+  width: 70%;
+  float: right;
+}

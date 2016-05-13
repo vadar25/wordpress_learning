@@ -8,7 +8,7 @@ if (have_posts()) :
 	while (have_posts()) : the_post();
 	if(in_category($page_title)) :?>
 	<article class="post page">
-		<h2><?php echo get_the_title()?></h2>
+		<h2><?php get_the_title()?></h2>
 	  <?php the_content();?>
 	</article>
 <?php 	endif; 	endwhile;
