@@ -3,7 +3,7 @@
 get_header();
 
 query_posts("cat=Home");
-echo $page_title = get_the_title();
+$page_title = get_the_title();
 if (have_posts()) :
 	while (have_posts()) : the_post();
 	if(in_category($page_title)) :?>
@@ -15,5 +15,6 @@ if (have_posts()) :
 	else :
 		echo '<p>No content found.</p>';
 	endif;
+  wp_reset_query();
 get_footer();
 ?>
