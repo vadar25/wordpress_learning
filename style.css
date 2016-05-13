@@ -5,8 +5,13 @@ Author URI: http://freelancevadar.onlinewebshop.net/home/index.html
 version: 1.0
 
 */
-
+html {
+  margin: 0px;
+  padding: 0px;
+}
 body {
+  margin: 0px;
+  padding: 0px;
   font-family: Arial, sans-serif;
   font-size: 14px;
   color:#333;
@@ -20,9 +25,16 @@ a:visited {
 p {
 
   line-height: 1.65em;
+  margin: 0 0 1em 0;
+
 }
 
 /*general layout*/
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 1em 0;
+	font-weight: normal;
+}
 
 div.container {
   max-width: 920px;
@@ -34,17 +46,29 @@ div.container {
 /*HEADER*/
 .site-header {
 
-  border-bottom: 2px solid #999;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+	padding: 30px 0 0 0;
 }
-/*FOOTER*/
 
-.site-footer {
-  border-top: 2px solid #999;
-  margin-top: 20px;
+.site-header h1 {
+  margin:0;
 }
+.site-header h1 a:link,
+.site-header h1 a:visited {
+  text-decoration: none;
+}
+
+.site-header h5 {
+  margin:0;
+}
+
+/*article*/
+
 
 article.post {
   border-bottom: 2px dotted #bbbbbb;
+  margin-bottom: 20px;
 }
 
 article.post:last-of-type {
@@ -69,7 +93,14 @@ article.post:last-of-type {
   float: left;
 }
 
+/* Header Nav Menu */
+.site-header nav {
+	margin-top: 30px;
+}
 
+.site-header nav ul li {
+	margin-right: 5px;
+}
 
 .site-header nav ul li a:link,
 .site-header nav ul li a:visited {
@@ -86,6 +117,32 @@ article.post:last-of-type {
 
 .site-header nav ul li.current-menu-item a:link,
 .site-header nav ul li.current-menu-item a:visited {
+  font-weight: bold;
   background-color: #006ec3;
   color: white;
+}
+.site-footer {
+  border-top: 1px solid #ddd;
+  margin-top: 30px;
+  font-size: 84%;
+}
+
+.site-footer nav{
+    margin: 30px 0 10px 0;
+
+}
+
+.site-footer nav ul li {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px dotted #ddd;
+}
+
+.site-footer nav ul li:last-of-type {
+	border-right: none;
+}
+/*page layout*/
+article.page h2 {
+	font-size: 225%;
+	margin-bottom: 15px;
 }
