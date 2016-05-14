@@ -9,9 +9,10 @@ if (have_posts()) :
 	if(in_category($page_title)) :?>
 	<article class="post page">
 		<h2><?php the_title()?></h2>
-	  <?php the_content();
-		echo get_post_time('l, F j, Y',true)?>
-
+	  <a><?php the_content(); ?></a>
+		<footer>
+		<?php echo get_post_time('l, F j, Y',true) ." - ". get_the_author();?>
+	</footer>
 	</article>
 <?php 	endif; 	endwhile;
 	else :

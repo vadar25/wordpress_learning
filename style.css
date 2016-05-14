@@ -161,3 +161,9 @@ div.text-column {
   width: 70%;
   float: right;
 }
+
+article footer {
+  margin: 10px;
+  padding: 5px;
+  text-align: right;
+}
