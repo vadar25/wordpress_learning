@@ -17,6 +17,10 @@ body {
   color:#333;
 }
 
+article, aside {
+  display:  block;
+}
+
 a:link,
 a:visited {
   color:#006ec3;
@@ -68,13 +72,28 @@ div.container {
 
 article.post {
   border-bottom: 2px dotted #bbbbbb;
-  margin-bottom: 20px;
+  border:1px solid grey;
+  margin-top: 20px;
+  max-width: 600px;
+  min-width: 300px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding:5px;
 }
 
 article.post:last-of-type {
   border-bottom: none;
 }
 
+#side_news {
+  border:1px solid grey;
+  width: 220px;
+  margin: 10px;
+  padding:5px;
+  height:100%;
+  float: right;
+
+}
 
 /*navigation menu*/
 
@@ -145,6 +164,7 @@ article.post:last-of-type {
 article.page h2 {
 	font-size: 225%;
 	margin-bottom: 15px;
+
 }
 /*clearfix*/
 
