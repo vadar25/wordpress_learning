@@ -8,8 +8,10 @@ if (have_posts()) :
 	while (have_posts()) : the_post();
 	if(in_category($page_title)) :?>
 	<article class="post page">
-		<h2><?php get_the_title()?></h2>
-	  <?php the_content();?>
+		<h2><?php the_title()?></h2>
+	  <?php the_content();
+		echo get_post_time('l, F j, Y',true)?>
+
 	</article>
 <?php 	endif; 	endwhile;
 	else :
