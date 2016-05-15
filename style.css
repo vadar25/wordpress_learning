@@ -16,10 +16,10 @@ body {
   font-size: 14px;
   color:#333;
 }
-
+/*
 article, aside {
   display:  block;
-}
+}*/
 
 a:link,
 a:visited {
@@ -70,7 +70,8 @@ div.container {
 /*article*/
 
 
-article.post {
+div.content-container {
+  display: inline-block;
   border-bottom: 2px dotted #bbbbbb;
   border:1px solid grey;
   margin-top: 20px;
@@ -84,14 +85,15 @@ article.post {
 article.post:last-of-type {
   border-bottom: none;
 }
-
+/*side news*/
 #side_news {
+  display: inline-block;
   border:1px solid grey;
   width: 220px;
   margin: 10px;
   padding:5px;
   height:100%;
-  float: right;
+  /*float: right;*/
 
 }
 
