@@ -72,14 +72,14 @@ div.container {
 
 div.content-container {
   display: inline-block;
-  border-bottom: 2px dotted #bbbbbb;
   border:1px solid grey;
-  margin-top: 20px;
+  margin-top: 10px;
   max-width: 600px;
   min-width: 300px;
   margin-right: 10px;
   margin-left: 10px;
   padding:5px;
+  vertical-align: top;
 }
 
 article.post:last-of-type {
@@ -92,7 +92,7 @@ article.post:last-of-type {
   width: 220px;
   margin: 10px;
   padding:5px;
-  height:100%;
+  vertical-align: top;
   /*float: right;*/
 
 }
@@ -137,7 +137,10 @@ article.post:last-of-type {
 }
 
 .site-header nav ul li.current-menu-item a:link,
-.site-header nav ul li.current-menu-item a:visited {
+.site-header nav ul li.current-menu-item a:visited,
+.site-header nav ul li.current-page-ancestor a:visited,
+.site-header nav ul li.current-page-ancestor a:link
+ {
   font-weight: bold;
   background-color: #006ec3;
   color: white;
@@ -188,4 +191,15 @@ article footer {
   margin: 10px;
   padding: 5px;
   text-align: right;
+}
+
+div.child_pages li {
+  display: inline-block;
+  border: 1px solid blue;
+  padding: 3px;
+  margin: 5px;
+}
+
+div.child_pages li a{
+  text-decoration: none;
 }
