@@ -5,11 +5,14 @@ get_header();
 query_posts("cat=Home");
 $page_title = get_the_title();?>
 <div class="content-container">
-
+	<?php
+	$args = array('child_of' => $post -> ID  );
+	wp_list_pages($args);?>
 <?php
 if (have_posts()) :
 	while (have_posts()) : the_post();
 	if(in_category($page_title)) :?>
+
 	<article class="post page">
 		<h2><?php the_title()?></h2>
 	  <a><?php the_content(); ?></a>
@@ -22,7 +25,7 @@ if (have_posts()) :
 		echo '<p>No content found.</p>';
 	endif;?>
 	</div>
-	<aside id="side_news">
+	<!--<aside id="side_news">
 		<h4>Heti újdonságok:</h4>
 				<ul>
 				<li>Julinak nem sikerült kihúznia a vikingek ősi kardját, de legalább látta.
@@ -35,7 +38,7 @@ if (have_posts()) :
 				<li>Hivatalosan is a sakk-klub tagja lettem trondheim-ben. Beneveztem egy versenyre is. Már az első forduló is megvolt, de ez a következő heti hirekhez tartozik.
 				</li>
 				</ul>
-	</aside>
+	</aside> -->
 <?php	  wp_reset_query();
 get_footer();
 ?>
