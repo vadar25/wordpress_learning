@@ -12,9 +12,8 @@ html {
 body {
   margin: 0px;
   padding: 0px;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  color:#333;
+  display: -webkit-box;
+  -webkit-box-pack: center;
 }
 /*
 article, aside {
@@ -42,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 div.container {
-  max-width: 920px;
+  width: 1000px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -100,43 +99,82 @@ article.post:last-of-type {
 
 /*navigation menu*/
 
-.site-nav ul{
-  margin: 0px;
-  padding: 0px;
+.site-nav {
+  background:#DBDBDB;
+	margin:0px;
+	border-radius:10px 10px 10px 10px;
+	box-shadow:rgb(110,110,110) 10px 10px 10px;
+	display:-webkit-box;
+	min-width:600px;
+	border:1px solid black;
+  height: auto;
 }
 
-
-.site-nav ul:before, .site-nav ul:after {content: "";display: table;}
-.site-nav ul:after {clear: both;}
-.site-nav ul { *zoom:1;}
+.site-nav div{
+  width:100%;
+  display:-webkit-box;
+}
+.site-nav ul {
+text-align:center;
+padding:0px;
+font:bold 14px Tahoma;
+width:100%;
+margin:auto;
+-webkit-box-orient:horizontal;
+display:-webkit-box;
+}
 
 .site-nav ul li {
   list-style: none;
-  float: left;
+  display:-webkit-box;
+}
+
+.site-nav ul li {
+  display:inline-block;
+	list-style:none;
+	color:black;
+	text-align:right;
+	font:bold 20px Tahoma;
+	text-decoration: none;
+	display:-webkit-box;
+	-webkit-box-flex:1;
+	-webkit-box-pack:center;
+	text-shadow:2px 2px 2px grey;
+}
+
+.site-nav ul li a{
+  display: block;
+  text-decoration: none;
+  color:black;
+  padding:5px;
+  margin:5px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+
+}
+
+#menu-main-menu.menu li.current_page_item a
+ {
+	color: #378AD7;
+}
+/*
+.site-nav nav div ul li.current-menu-item a:link,
+.site-nav nav div ul li.current-menu-item a:visited {
+  text-decoration: none;
+  color:#0D0D78;
+  background:black;
+}*/
+
+.site-nav ul li a:hover{
+  text-decorati;on: none;
+  color:#0D0D78;
 }
 
 /* Header Nav Menu */
-.site-header nav {
-	margin-top: 30px;
-}
-
-.site-header nav ul li {
-	margin-right: 5px;
-}
-
-.site-header nav ul li a:link,
-.site-header nav ul li a:visited {
-  display: block;
-  padding: 10px 18px;
-  border: 1px solid #bbb;
-  border-bottom: none;
-  text-decoration:none;
-
-}
 .site-header nav ul li a:hover {
   background-color: #bbb;
 }
-
+/*
 .site-header nav ul li.current-menu-item a:link,
 .site-header nav ul li.current-menu-item a:visited,
 .site-header nav ul li.current-page-ancestor a:visited,
@@ -145,7 +183,9 @@ article.post:last-of-type {
   font-weight: bold;
   background-color: #006ec3;
   color: white;
-}
+}*/
+
+
 .site-footer {
   border-top: 1px solid #ddd;
   margin-top: 30px;
