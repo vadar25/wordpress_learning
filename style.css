@@ -23,8 +23,9 @@ article, aside {
 
 a:link,
 a:visited {
-  color:#006ec3;
+	color: #006ec3;
 }
+
 
 p {
 
@@ -193,13 +194,24 @@ article footer {
   text-align: right;
 }
 
-div.child_pages li {
+nav.children-links li,
+nav.children-links span {
   display: inline-block;
-  border: 1px solid blue;
   padding: 3px;
   margin: 5px;
 }
 
+
+/*
 div.child_pages li a{
   text-decoration: none;
+  color:blue;
+
+}*/
+
+.children-links .current_page_item a:link,
+.children-links .current_page_item  a:visited {
+	border-bottom: 1px solid #DDD;
+	color: red;
+	cursor: default;
 }
