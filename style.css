@@ -153,17 +153,13 @@ display:-webkit-box;
 
 }
 
-#menu-main-menu.menu li.current_page_item a
- {
-	color: #378AD7;
-}
-/*
-.site-nav nav div ul li.current-menu-item a:link,
-.site-nav nav div ul li.current-menu-item a:visited {
+.container nav ul li.current-menu-item a:link ,
+.container nav ul li.current-menu-item a:visited {
   text-decoration: none;
-  color:#0D0D78;
-  background:black;
-}*/
+  color:#fff;
+  background-color:black;
+}
+
 
 .site-nav ul li a:hover{
   text-decorati;on: none;
