@@ -4,6 +4,7 @@ get_header();
 
 query_posts("cat=Home");
 $page_title = get_the_title();?>
+<?php if (has_children() or $post -> post_parent > 0) {?>
 <div class="child_pages">
 
 	<span class="parent-link"><a href="<?php echo get_the_permalink(get_top_ancestor_id())
@@ -14,6 +15,7 @@ $page_title = get_the_title();?>
 								'title_li' => '');
 	wp_list_pages($args);?>
 </div>
+<?php };?>
 <div class="content-container">
 <?php
 if (have_posts()) :
