@@ -243,23 +243,62 @@ display:-webkit-box;
 .site-footer {
   border-top: 1px solid #ddd;
   margin-top: 30px;
+  margin-bottom: 10px;
   font-size: 84%;
+  color:white;
+  background-color:#2A2A2A;
+  border:1px solid black;
+  display: block;
+  border-radius:10px 10px 10px 10px;
+	box-shadow:rgb(110,110,110) 10px 10px 10px;
 }
-
+.site-footer p,
+.site-footer nav ul li
+ {
+  display:inline-block;
+}
 .site-footer nav{
-    margin: 30px 0 10px 0;
+    display: inline-block;
 
 }
-
 .site-footer nav ul li {
-  margin-right: 10px;
-  padding-right: 10px;
-  border-right: 1px dotted #ddd;
+
+  list-style: none;
+}
+.site-footer p {
+  margin-left: 10px;
+  margin-right: 5px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+
 }
 
-.site-footer nav ul li:last-of-type {
-	border-right: none;
+.site-footer nav ul {
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
+.site-footer nav ul li a{
+  color:white;
+  padding-right:10px;
+  padding-left: 10px;
+  border-right: 1px dotted white;
+  text-decoration: none;
+
+}
+.site-footer nav ul li:last-of-type a {
+  color:white;
+  padding-right:10px;
+  padding-left: 10px;
+  border: none;
+  text-decoration: none;
+
+}
+
+.site-footer nav ul li a {
+  text-decoration: none;
+}
+
+
 /*page layout*/
 article.page h2 {
 	font-size: 225%;
