@@ -66,28 +66,52 @@ div.header-container {
 .site-header {
 
   border-bottom: 1px solid #ddd;
-  margin-bottom: 20px;
-	padding: 30px 0 0 0;
   display: block;
   margin:0 auto;
-  width:500px;
+  max-width:650px;
   text-align: center;
 }
 
-.site-header h1 {
+.site-header h1{
   margin:0;
+  text-align:center;
+  color:black;
+	text-decoration:underline;
+	font:bold 40px Learning Curve Pro;
+	font-variant: small-caps;
+	margin-bottom:10px;
 }
-.site-header h1 a:link,
-.site-header h1 a:visited {
-  text-decoration: none;
+
+.site-header h1 a {
+  color:black;
 }
+
 
 .site-header h5 {
   margin:0;
 }
 
+.site-header h2 li {
+  display: inline-block;
+  max-width: 200px;
+  min-width: 150px;
+  height: 40px;
+  list-style: none;
+  padding:10px;
+  color:black;
+  font:bold 20px Tahoma;
 
+}
+#head_comm {
+      font:bold 20px Tahoma;
+}
+.site-header h2 li p {
+  color:black;
+	font:16px Tahoma;
+  padding:2px;
+	margin:7px;
 
+}
 /*article*/
 
 

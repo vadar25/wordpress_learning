@@ -21,9 +21,20 @@
       <header class="site-header">
 
         <h1><a href="<?php echo home_url();?>"><?php bloginfo('name');?></a>  </h1>
-        <h5><?php bloginfo('description');?><?php if (is_page('Home')) {?>
-           Thanks for watching this.
-        <?php } ?>  </h5>
+        <h2>
+          <li>
+            <p id="head_comm">Focus</p>
+            <p>on what is important</p>
+          </li>
+          <li>
+            <p id="head_comm">Capture</p>
+            <p>the good times</p>
+          </li>
+          <li>
+            <p id="head_comm">Develop</p>
+            <p>from the negatives</p>
+          </li>
+        </h2>
 
         <?php if (is_page()) ?>
       </header>
