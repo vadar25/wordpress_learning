@@ -298,7 +298,12 @@ display:-webkit-box;
   text-decoration: none;
 }
 
+div.article_container {
+    border-radius:10px 10px 10px 10px;
+    border: 1px solid grey;
+    padding:15px;
 
+}
 /*page layout*/
 article.page h2 {
 	font-size: 225%;
