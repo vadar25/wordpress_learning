@@ -37,7 +37,7 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
 	margin: 0 0 1em 0;
-	font-weight: normal;
+	font-weight: normal;  
 }
 
 div.container {
@@ -132,7 +132,6 @@ display:-webkit-box;
 .site-nav ul li {
   display:inline-block;
 	list-style:none;
-	color:black;
 	text-align:right;
 	font:bold 20px Tahoma;
 	text-decoration: none;
@@ -145,7 +144,7 @@ display:-webkit-box;
 .site-nav ul li a{
   display: block;
   text-decoration: none;
-  color:black;
+  color:#605959;
   padding:5px;
   margin:5px;
   padding-bottom: 7px;
@@ -155,9 +154,9 @@ display:-webkit-box;
 
 .container nav ul li.current-menu-item a:link ,
 .container nav ul li.current-menu-item a:visited {
-  text-decoration: none;
-  color:#fff;
-  background-color:black;
+  text-decoration: None;
+  color:black;
+
 }
 
 
@@ -166,11 +165,8 @@ display:-webkit-box;
   color:#0D0D78;
 }
 
-/* Header Nav Menu */
-.site-header nav ul li a:hover {
-  background-color: #bbb;
-}
-/*
+
+/* i will come back to this when it is neccessary
 .site-header nav ul li.current-menu-item a:link,
 .site-header nav ul li.current-menu-item a:visited,
 .site-header nav ul li.current-page-ancestor a:visited,

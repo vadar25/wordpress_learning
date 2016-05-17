@@ -16,6 +16,9 @@
       <?php wp_nav_menu($args);?>
     </nav>
     <header class="site-header">
+      <img id="left_image" src="http://www.wpvadartest.co.nfwp-content/themes/learningwordpress/images/fold.jpg" alt="fold">
+			<img id="right_image" src="http://www.wpvadartest.co.nfwp-content/themes/learningwordpress/images/ninja2.jpg" alt="ninja">
+
       <h1><a href="<?php echo home_url();?>"><?php bloginfo('name');?></a>  </h1>
       <h5><?php bloginfo('description');?><?php if (is_page('Home')) {?>
          Thanks for watching this.

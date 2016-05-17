@@ -1,5 +1,5 @@
   <footer class="site-footer">
-    <nav class="site-nav">
+    <nav class="site-nav-footer">
       <?php
       $args = array('theme_location' => 'footer');
       ?>
