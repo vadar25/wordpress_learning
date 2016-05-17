@@ -3,7 +3,9 @@
 <?php
 
 get_header();
-
+if (is_home()) {
+	query_posts('posts_per_page=4');
+};
 if (have_posts()) :
 	while (have_posts()) : the_post();?>
 	<article class="post">

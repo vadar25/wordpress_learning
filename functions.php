@@ -34,4 +34,18 @@ function has_children() {
   $pages= get_pages('child_of='. $post->ID );
   return count($pages);
 }
+
+//limit posts per page
+function limit_posts_per_page(){
+  if (is_front_page()) {
+    return 4;
+  }
+  else {
+    return 15;
+  }
+}
+
+
+
+
 ?>
