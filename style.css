@@ -204,6 +204,11 @@ display:-webkit-box;
   color:black;
 
 }
+/*you must be specific in order not to repeat yourself*/
+.container footer nav ul li.current-menu-item a:link ,
+.container footer nav ul li.current-menu-item a:visited {
+  color:white;
+}
 
 
 .site-nav ul li a:hover{
