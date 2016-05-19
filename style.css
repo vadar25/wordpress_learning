@@ -123,11 +123,18 @@ div.content-container {
   max-width: 600px;
   min-width: 300px;
   margin-right: 10px;
-  margin-left: 10px;
   padding:5px;
   vertical-align: top;
+  border-radius:10px 10px 10px 10px;
 }
+/*
+div.article_container {
+    border-radius:10px 10px 10px 10px;
+    border: 1px solid grey;
+    padding:15px;
 
+}
+*/
 article.post:last-of-type {
   border-bottom: none;
 }
@@ -316,10 +323,10 @@ article.page h2 {
 
 }
 /*clearfix*/
-
+/*
 .clearfix:before, .clearfix:after { content: "";display: table;}
 .clearfix:after {clear: both;}
-.clearfix {*zoom:1;}
+.clearfix {*zoom:1;}*/
 /*two column title layout*/
 
 div.title-column {
