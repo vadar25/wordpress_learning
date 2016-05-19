@@ -20,9 +20,10 @@ if (is_page()){
     	wp_list_pages($args);?>
 
     </nav>
-<?php  }}
 
-
+<?php  }} ?>
+<div class="content-wrapper">
+<?php
 if (have_posts()) :?>
 <div class="content-container">
   <?php	while (have_posts()) : the_post();
@@ -52,6 +53,7 @@ if (have_posts()) :?>
       </li>
       </ul>
 </aside>
+</div>
 <?php	  wp_reset_query();
 
 ?>
