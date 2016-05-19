@@ -54,4 +54,4 @@ if (have_posts()) :?>
 </aside>
 <?php	  wp_reset_query();
 
-}?>
+?>
