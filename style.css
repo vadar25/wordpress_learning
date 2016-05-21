@@ -120,6 +120,12 @@ div.content-wrapper {
   display: -webkit-box;
   -webkit-box-orient:horizontal;
     vertical-align: top;
+background:rgb(224,224,224);
+	border:3px solid grey;
+	max-width:1000px;
+	margin:auto;
+	border-radius:10px;
+	box-shadow:rgb(110,110,110) 10px 10px 10px;
 
 }
 
@@ -129,12 +135,15 @@ div.content-container {
   -webkit-box-orient:vertical;*/
   -webkit-box-flex:1;
   border:1px solid grey;
-  margin-top: 10px;
+  margin:30px;
   /*max-width: 600px;*/
+  background-image: url("http://www.wpvadartest.co.nf/wordpress/wp-content/uploads/2016/05/writing2.jpg");
   min-width: 120px;
   margin-right: 10px;
   padding:5px;
-  border-radius:10px 10px 10px 10px;
+  box-shadow:rgb(110,110,110) 10px 10px 10px;
+	border-radius:10px;
+  padding:20px;
 }
 /*
 div.article_container {
@@ -144,8 +153,12 @@ div.article_container {
 
 }
 */
-article.post:last-of-type {
-  border-bottom: none;
+article.post {
+  background:white;
+	border: 1px solid black;
+	padding:20px;
+	margin-bottom: 15px;
+	-webkit-border-radius:25px;
 }
 /*side news*/
 #side_news {
@@ -153,11 +166,14 @@ article.post:last-of-type {
   -webkit-box-orient:vertical;*/
   -webkit-box-flex:0;
   border:1px solid grey;
-  width: 220px;
-  margin: 10px;
-  padding:5px;
+  width:220px;
+  margin:30px;
+  padding:30px;
+  background-image: url("http://www.wpvadartest.co.nf/wordpress/wp-content/uploads/2016/05/weekly_news.jpg");
   vertical-align: top;
   height:100%;
+  -webkit-border-radius:10px;
+	box-shadow:rgb(110,110,110) 10px 10px 10px;
   /*float: right;*/
 
 }

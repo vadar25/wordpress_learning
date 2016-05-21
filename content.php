@@ -3,8 +3,8 @@ if (is_home()) {
 	query_posts('posts_per_page=4');
 }
 if (is_page()){
-
-    query_posts("cat=Home");
+		$pageis =1;
+    query_posts("posts_per_page=100");
 
     $page_title = get_the_title();?>
     <?php if (has_children() or $post -> post_parent > 0) {?>
@@ -24,10 +24,13 @@ if (is_page()){
 <?php  }} ?>
 <div class="content-wrapper">
 <?php
-if (have_posts()) :?>
+if (have_posts()) :
+	$output_number =0;?>
 <div class="content-container">
-  <?php	while (have_posts()) : the_post();
-    if(is_page()) {if(is_category($page_title)) {
+  <?php	while (have_posts() and $output_number < 10) : the_post();
+
+    if(	$pageis) {	if(in_category(explode(" ",$page_title)[0])) {
+			$output_number++;
         get_template_part('main_content');
     }} else {
       get_template_part('main_content');
@@ -38,22 +41,21 @@ if (have_posts()) :?>
 	else :
 		echo '<p>No content found.</p>';
 	endif;
-?>
-<aside id="side_news">
-  <h4>Heti újdonságok:</h4>
-      <ul>
-      <li>Julinak nem sikerült kihúznia a vikingek ősi kardját, de legalább látta.
-      </li>
-      <li>Julit nem csak konduktorként, de fényképészként is alkalmaznák Stavangerben. Ezért jó lenne, ha levenné a cenzűrát és az oldalra is feltölthetnék néhány képet.
-      </li>
-      <li>Engem regisztráltak mint munkakeresőt Norvégiában. Gyakorlatilag egy könyvtárnyi papírt kellett beszereznem hivatalosan,
-      ami a gyakorlatban így zajlott. Kérem az útlevelét, köszönöm... Legalább pipa.
-      </li>
-      <li>Hivatalosan is a sakk-klub tagja lettem trondheim-ben. Beneveztem egy versenyre is. Már az első forduló is megvolt, de ez a következő heti hirekhez tartozik.
-      </li>
-      </ul>
+
+wp_reset_query();
+query_posts( 'cat=home' );
+if (have_posts()) {?>
+	<aside id="side_news">
+	  <h4>Heti újdonságok:</h4>
+<?php 	while (have_posts()) {the_post();
+	if (in_category("Heti")) {?>
+<li><?php the_content(); ?></li>
+<?php }} ?>
 </aside>
+<?php	} ?>
+
 </div>
-<?php	  wp_reset_query();
+<?php
+wp_reset_query();
 
 ?>
