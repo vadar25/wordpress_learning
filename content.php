@@ -45,7 +45,7 @@ if (have_posts()) :
 wp_reset_query();
 query_posts( 'posts_per_page=100' );
 if (have_posts()) {?>
-	<aside id="side_news">
+	<aside class="side_news">
 	  <h4>Heti újdonságok:</h4>
 <?php 	while (have_posts()) {the_post();
 	if (in_category("Hírek") and array_reverse(getdate())[0] - get_the_date('U') < 604800 /*1 week in secs*/ ) {?>

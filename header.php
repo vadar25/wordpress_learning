@@ -9,6 +9,11 @@
 
 <body <?php body_class();?>>
   <div class="container">
+    <div class="sb-search">
+
+          <?php get_search_form(); ?>
+
+    </div>
     <nav class="site-nav">
       <?php
       $args = array('theme_location' => 'primary');
