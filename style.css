@@ -77,14 +77,14 @@ div.hd-search {
 }*/
 
 /*search form */
-div.sb-search {
+/*div.sb-search {
   position: fixed;
   top: 0px;
   right: 0px;
   height: auto;
   width: auto;
 }
-
+*/
 .search-form {
 	position: absolute;
 	right: 20px;
@@ -204,6 +204,7 @@ div.content-container {
   box-shadow:rgb(110,110,110) 10px 10px 10px;
 	border-radius:10px;
   padding:20px;
+  height: 100%;
 }
 /*
 div.article_container {
