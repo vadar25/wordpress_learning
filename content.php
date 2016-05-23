@@ -32,8 +32,9 @@ if (have_posts()) :
     if(	$pageis) {	if(in_category(explode(" ",$page_title)[0])) {
 			$output_number++;
         get_template_part('main_content');
-    }} else {
-      get_template_part('main_content');
+    }} else { if (in_category("Front"))
+      {get_template_part('main_content');}
+			else {}
     }
    endwhile; ?>
 </div>
