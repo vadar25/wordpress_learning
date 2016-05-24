@@ -6,6 +6,7 @@
       ?>
       <?php wp_nav_menu($args);?>
     </nav>
+    <?php wp_footer();/*we need this to include the javascript*/ ?>
   </footer>
 </div><!-- container-->
 <?php wp_footer();?>
